@@ -1,0 +1,38 @@
+{
+    "main":[
+        {
+        "name":"Shokupan Bread",
+        "cold":0.29,
+        "warm":0.25
+        }
+    ],
+    "flours":[
+        {
+            "name": "Bread Flour",
+            "percentage": 100
+        }
+    ],
+    "ingredients":[
+        {
+            "name": "Sugar",
+            "percentage": 4.8
+        },
+        {
+            "name": "Salt",
+            "percentage": 2.0
+        },
+        {
+            "name": "Yeast",
+            "percentage": 1.2
+        },
+        {    
+            "name": "Milk",
+            "percentage": 71.8
+        },
+        {
+            "name":"Butter",
+            "percentage": 5.4
+        }
+        
+    ]
+}
