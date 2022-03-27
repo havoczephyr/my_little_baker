@@ -12,7 +12,7 @@ def gui():
     root.iconbitmap("my_little_baker/static/bread.ico")
 
     root.title('My Little Baker')
-    root.geometry('300x150')
+    root.geometry('650x550')
 
     my_label = ttk.Label(root, text=f"Current Loaded Recipe: {loaded_recipe}")
     my_label.pack()
@@ -49,10 +49,19 @@ def gui():
                 recipe_table.pack()
                 recipe_tree = ttk.Treeview(recipe_table)
                 column_list = []
+                percentage = []
+
+                for i in recipe['flours']:
+                    column_list.append(i['name'])
+                    percentage.append(i['percentage'])
 
                 for i in recipe['ingredients']:
                     column_list.append(i['name'])
+                    percentage.append(i['percentage'])
+                
+                column_list.append('Total')
                 recipe_tree['columns'] = column_list
+
                 recipe_tree.column("#0", width=0, stretch=NO)
                 recipe_tree.heading("#0", text='', anchor=CENTER)
                 for i in column_list:
